@@ -66,6 +66,21 @@ def encode(text):
             ":": ";Gayone",
             ";": ";<>",
 
+            "!": ";HoFinitoLeIdeeLOL",
+            "|": ";QuantiCaratteriMancano?",
+            "$": ";NonStoDelirandoGiuro",
+            "#": ";OkayForse",
+            "'": ";CreareStaCodifica_èStataUnaSfida",
+            "\"": ";UnaSfidaControLaMiaSaluteMentaleLOL", 
+            "/": ";SoRetardato",
+            "\\": ";WlaFiga",
+            "<": ";boh_nonSoCheScrivere",
+            ">": ";meowMEOW_BITCH",
+            ")": ";miuw", 
+            "(": ";alfa",
+            "&": ";SIUMTATTICOSO", 
+            "%": ";NoAllAlcolismo", # ho più birra che sangue in corpo btw
+
             "1": ";KkA",
             "2": ";aAa", 
             "3": ";hhH", 
@@ -154,6 +169,21 @@ def decode(encoded_text):
             ";Gayone": ":",
             ";<>": ";",
 
+            ";HoFinitoLeIdeeLOL": "!",
+            ";QuantiCaratteriMancano?": "|",
+            ";NonStoDelirandoGiuro": "$",
+            ";OkayForse": "#",
+            ";CreareStaCodifica_èStataUnaSfida": "'",
+            ";UnaSfidaControLaMiaSaluteMentaleLOL": "\"",
+            ";SoRetardato": "/",
+            ";WlaFiga": "\\",
+            ";boh_nonSoCheScrivere": "<",
+            ";meowMEOW_BITCH": ">",
+            ";miuw": ")",
+            ";alfa": "(",
+            ";SIUMTATTICOSO": "&",
+            ";NoAllAlcolismo": "%" # ho più birra che sangue in corpo btw
+
             ";KkA": "1",
             ";aAa": "2",
             ";hhH": "3",
@@ -180,12 +210,3 @@ def decode(encoded_text):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-
-print("Encode: 1\nDecode: 2")
-var = input("Select >>> ")
-if(var == "1"):
-    ivar = input("text >>> ")
-    print(encode(ivar))
-else:
-    ivar1 = input("text >>> ")
-    print(decode(ivar1))
